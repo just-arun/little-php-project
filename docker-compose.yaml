@@ -1,0 +1,29 @@
+
+version: '2'
+services:
+  mysql:
+        image: mysql:8.0
+        container_name: mysql
+        command: --default-authentication-plugin=mysql_native_password
+        working_dir: /home/linux/Documents/projects/interview/php-project/src
+        # volumes:
+        #   - mysql:/var/lib/mysql
+        restart: always
+        environment:
+          - MYSQL_ROOT_PASSWORD=pwd123
+          - MYSQL_DATABASE=my_db
+          - MYSQL_USER=user
+          - MYSQL_PASSWORD=pwd123
+          - MYSQL_MY_DATABASE=my-database
+        ports:
+          - "3306:3306"
+  website:
+    container_name: php72
+    build:
+      context: ./
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 80:80
+    depends_on:
+      - mysql

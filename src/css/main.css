@@ -1,0 +1,275 @@
+* {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.wrapper {
+  padding: 10px;
+}
+
+.wrapper select {
+  margin: 8px;
+  margin-left: 0px;
+  border: 0px;
+  background: #fff;
+  border: 2px solid #d7f6f8;
+}
+
+.wrapper select option {
+  padding: 10px;
+}
+
+.wrapper .title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px;
+}
+
+.wrapper .table-card {
+  max-width: 900px;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(128, 128, 128, 0.315);
+          box-shadow: 1px 1px 10px 0px rgba(128, 128, 128, 0.315);
+}
+
+.wrapper .table-card table {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .table-card table .action {
+  max-width: 120px !important;
+  text-align: center;
+}
+
+.wrapper .table-card table .action button {
+  margin: 0px !important;
+  padding: 3px;
+  border: 0px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.wrapper .table-card table .action button:hover, .wrapper .table-card table .action button:focus {
+  background: #c7c7c7;
+}
+
+.wrapper .table-card table th {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.wrapper .table-card table tbody tr td {
+  padding: 10px 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper .table-card table tbody tr td input {
+  border: 2px solid #d7f6f8;
+  padding: 5px;
+  max-width: 100px;
+  border-radius: 3px;
+}
+
+.wrapper .table-card table tbody tr td i {
+  font-size: 1rem;
+  margin: 5px;
+}
+
+.wrapper .table-card .empty {
+  text-align: center;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .form-container {
+  max-width: 400px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 10px 0 rgba(128, 128, 128, 0.178);
+          box-shadow: 1px 1px 10px 0 rgba(128, 128, 128, 0.178);
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 50px auto;
+}
+
+.wrapper .form-container .form-layout {
+  width: 100%;
+}
+
+.wrapper .form-container .form-layout input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #d7f6f8;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.wrapper .form-container .form-layout input:focus {
+  outline: 2px solid #19ffff;
+}
+
+.wrapper .form-container .form-layout .flexd-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .form-container .form-layout .flexd-box select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.wrapper .form-container .form-layout .flexd-box input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.wrapper .form-container .form-layout .centered-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.wrapper .form-container .form-layout .centered-button button {
+  padding: 10px 60px;
+  border: 0px;
+  font-size: 1.2rem;
+  background: #fff;
+  border: 2px solid rgba(0, 81, 255, 0.384);
+  color: rgba(0, 17, 255, 0.384);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wrapper .form-container .form-layout .centered-button button:disabled {
+  background: rgba(0, 4, 255, 0.247);
+}
+
+.wrapper .form-container .form-layout .centered-button button:hover, .wrapper .form-container .form-layout .centered-button button:focus {
+  background: #0004ff;
+  border: 2px solid #0004ff;
+  color: white;
+}
+
+.delete-dialog {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 6;
+}
+
+.delete-dialog .closing-part {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.521);
+}
+
+.delete-dialog .delete-card {
+  background: #fff;
+  padding: 12px;
+  text-align: center;
+  max-width: 250px;
+  z-index: 7;
+}
+
+.delete-dialog .delete-card h3 {
+  font-weight: 500;
+  margin: 20px;
+}
+
+.delete-dialog .delete-card button {
+  padding: 6px 10px;
+  border: 0px;
+  background: #fff;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.delete-dialog .delete-card button.delete {
+  background: #ff0095;
+  color: #fff;
+}
+
+.delete-dialog .delete-card button.delete:focus {
+  outline: 2px solid #ff0095;
+}
+
+.nav-bar {
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  left: 0;
+  -webkit-box-shadow: 1px 1px 10px 0px rgba(128, 128, 128, 0.322);
+          box-shadow: 1px 1px 10px 0px rgba(128, 128, 128, 0.322);
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 5;
+  background: #fff;
+}
+
+.nav-bar .spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav-bar .action button {
+  border: 0px;
+  padding: 5px 15px;
+  color: grey;
+  background: #fff;
+  border-bottom: 3px solid #fff;
+  outline: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.nav-bar .action button.active {
+  color: #ff0062;
+}
+/*# sourceMappingURL=main.css.map */
